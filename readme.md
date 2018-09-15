@@ -12,13 +12,12 @@
 $ npm install https://github.com/rjoydip/tplt.git
 ```
 
-
 ## Usage
 
 ```js
 const name = 'john';
-log(tplt`Hi ${name} and age ${25}`);
-log(tplt`Simple`);
+tplt`Hi ${name} and age ${25}`;
+tplt`Simple`;
 ```
 
 
