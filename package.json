@@ -1,0 +1,57 @@
+{
+	"name": "tplt",
+	"version": "0.0.0",
+	"description": "Template Literals & Tag Function",
+	"license": "MIT",
+	"repository": "rjoydip/tplt",
+	"author": {
+		"name": "Joydip Roy",
+		"email": "joydipand@gmail.com",
+		"url": "https://github.com/rjoydip"
+	},
+	"main": "lib/index.js",
+	"module": "es/index.js",
+	"jsnext:main": "es/index.js",
+	"typings": "index.d.ts",
+	"engines": {
+		"node": ">=6"
+	},
+	"scripts": {
+		"build": "npm run clean && babel --out-dir lib index.js && cross-env BABEL_ENV=es babel --out-dir es index.js",
+		"clean": "rm -rf lib es built",
+		"lint": "eslint **/*.js --ignore-path .eslintignore",
+		"test": " cross-env BABEL_ENV=test jest --coverage test.js",
+		"cli": "npm rm -g tplt && npm i -g ."
+	},
+	"files": [
+		"index.js",
+		"cli.js"
+	],
+	"keywords": [
+		""
+	],
+	"dependencies": {},
+	"devDependencies": {
+		"@babel/cli": "^7.0.0",
+		"@babel/core": "^7.0.1",
+		"@babel/polyfill": "^7.0.0",
+		"@babel/preset-env": "^7.0.0",
+		"babel-core": "^6.26.3",
+		"babel-jest": "^23.6.0",
+		"babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+		"babel-plugin-transform-object-rest-spread": "^7.0.0-beta.3",
+		"cross-env": "^5.2.0",
+		"jest": "^23.6.0",
+		"regenerator-runtime": "^0.12.1",
+		"eslint": "^5.0.1",
+		"eslint-config-standard": "^11.0.0",
+		"eslint-plugin-import": "^2.13.0",
+		"eslint-plugin-jest": "^21.17.0",
+		"eslint-plugin-node": "^6.0.1",
+		"eslint-plugin-promise": "^3.8.0",
+		"eslint-plugin-standard": "^3.1.0"
+	},
+	"jest": {
+		"transform": {}
+	}
+}

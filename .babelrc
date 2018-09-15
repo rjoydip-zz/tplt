@@ -1,0 +1,25 @@
+{
+	"presets": [
+		["@babel/env", {
+			"modules": false,
+			"targets": {
+				"node": 4,
+				"browsers": ["last 2 versions"]
+			  }
+		}]
+	],
+	"plugins": [
+		["transform-object-rest-spread", { "useBuiltIns": true }]
+	],
+	"env": {
+		"es": {},
+		"test": {
+			"presets": ["env"]
+		},
+		"development": {
+			"plugins": [
+				"transform-es2015-modules-commonjs"
+			]
+		}
+	}
+}
