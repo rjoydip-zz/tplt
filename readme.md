@@ -9,7 +9,7 @@
 ## Install
 
 ```
-$ npm install https://github.com/rjoydip/tplt.git
+$ npm i tplt
 ```
 
 ## Usage
@@ -28,29 +28,6 @@ tplt`Simple`;
 #### input
 
 Type: `string`
-
-## CLI
-
-```
-$ npm install --global tplt
-```
-
-```
-$ tplt --help
-
-  Usage
-    tplt [input]
-
-  Options
-    --foo  Lorem ipsum [Default: false]
-
-  Examples
-    $ tplt
-    unicorns & rainbows
-    $ tplt ponies
-    ponies & rainbows
-```
-
 
 ## License
 
